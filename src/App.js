@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Home from "./Pages/Homepage";
 import List from "./Pages/List";
 import Login from "./Pages/Login";
 import NewItems from "./Pages/NewItems";
 import Single from "./Pages/Single";
+import classes from "./Styles/App.module.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.App}>
       <BrowserRouter>
         <Routes>
           <Route path="/">
