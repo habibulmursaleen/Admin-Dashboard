@@ -1,0 +1,25 @@
+.chart {
+  flex: 5;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  color: gray;
+  border-radius: 0.4rem;
+  &:hover {
+    box-shadow: #c9bcf7 10px 10px 40px -10px;
+  }
+
+  .chartContainerArea {
+    width: 100%;
+  }
+
+  .chartContainerPolarArea {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+}

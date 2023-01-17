@@ -20,7 +20,10 @@
       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
       padding: 20px;
       margin: 20px;
-
+      border-radius: 0.4rem;
+      &:hover {
+        box-shadow: #c9bcf7 10px 10px 40px -10px;
+      }
       .listTitle {
         font-weight: 500;
         color: gray;

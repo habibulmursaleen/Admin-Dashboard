@@ -24,15 +24,18 @@
         border: 0.25px solid #7451f8;
         color: #7451f8;
         box-shadow: #d8d1f9 0px 20px 30px -10px;
+        width: 30rem;
       }
 
       input {
         border: none;
         outline: none;
         background: transparent;
-
         &::placeholder {
           font-size: 15px;
+        }
+        &:hover {
+          width: 30rem;
         }
       }
 

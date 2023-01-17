@@ -32,11 +32,16 @@
     .link {
       width: max-content;
       font-size: 12px;
-      background-color: #7451f8;
-      color: #f3f2f7;
+      background-color: #ffffff;
+      color: #7451f8;
       border-radius: 0.4rem;
       padding: 0.3rem;
-      box-shadow: #7451f8 0px 20px 30px -10px;
+      box-shadow: #7451f8 30px 20px 30px -10px;
+      cursor: pointer;
+      &:hover {
+        background-color: #7451f8;
+        color: #ffffff;
+      }
     }
 
     .percentage {

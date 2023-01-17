@@ -4,7 +4,7 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import React from "react";
-import classes from "../Styles/Widgets.module.scss";
+import classes from "../../Styles/Widgets.module.scss";
 
 const Widgets = ({ props }) => {
   let data;

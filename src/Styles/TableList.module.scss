@@ -1,0 +1,58 @@
+.table {
+  .header {
+    font-weight: 700;
+    background-color: #7451f8;
+    color: #fff;
+  }
+
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2.5px solid #7d5bf9;
+      margin-right: 10px;
+      object-fit: cover;
+      &:hover {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+
+  .product {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    box-shadow: #7451f8 30px 20px 30px -10px;
+  }
+
+  .method {
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 0.4rem;
+      padding: 0.3rem;
+      box-shadow: #c9bcf7 30px 20px 30px -10px;
+    }
+  }
+
+  .status {
+    background-color: #7451f8;
+    color: #fff;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    &.Approved {
+      background-color: green;
+      color: #fff;
+    }
+    &.Pending {
+      background-color: goldenrod;
+      color: #fff;
+    }
+  }
+}
