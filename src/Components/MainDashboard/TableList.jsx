@@ -62,9 +62,9 @@ const TableList = () => {
     },
   ];
 
-  const changeColor = (Approved) => {
-    return Approved ? "Approved" : "Pending";
-  };
+  // const changeColor = (Approved) => {
+  //   return Approved ? "Approved" : "Pending";
+  // };
 
   return (
     <TableContainer component={Paper} className={classes.table}>

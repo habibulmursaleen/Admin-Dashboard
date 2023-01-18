@@ -15,14 +15,10 @@ const Charts = () => {
       },
       {
         name: "Balance",
-        data: [10, 50, 30, 90, 40, 120, 67],
+        data: [10, 120, 30, 90, 40, 50, 67],
       },
     ],
     options: {
-      chart: {
-        height: "fit",
-        type: "area",
-      },
       dataLabels: {
         enabled: false,
       },
