@@ -5,17 +5,32 @@
   .newContainer {
     flex: 6;
 
-    .top,
+    .top {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 50px;
+      margin: 20px;
+      display: flex;
+      border-radius: 0.7rem;
+      background-color: #7451f8;
+      &:hover {
+        box-shadow: #c9bcf7 10px 10px 40px -10px;
+      }
+
+      h1 {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+      }
+    }
     .bottom {
       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-      padding: 10px;
+      padding: 50px;
       margin: 20px;
       display: flex;
-
-      h1 {
-        color: lightgray;
-        font-size: 20px;
+      border-radius: 0.7rem;
+      &:hover {
+        box-shadow: #c9bcf7 10px 10px 40px -10px;
       }
 
       .left {
@@ -23,8 +38,8 @@
         text-align: center;
 
         img {
-          width: 100px;
-          height: 100px;
+          width: 200px;
+          height: 200px;
           border-radius: 50%;
           object-fit: cover;
         }
@@ -41,14 +56,21 @@
 
           .formInput {
             width: 40%;
-
+            &:hover {
+              color: #7451f8;
+            }
             label {
               display: flex;
               align-items: center;
               gap: 10px;
 
               .icon {
+                width: 40px;
+                height: 40px;
                 cursor: pointer;
+                &:hover {
+                  color: #7451f8;
+                }
               }
             }
 
@@ -56,7 +78,11 @@
               width: 100%;
               padding: 5px;
               border: none;
+              outline: none;
               border-bottom: 1px solid gray;
+              &:hover {
+                border-bottom: 3px solid #7451f8;
+              }
             }
           }
 
@@ -64,11 +90,17 @@
             width: 150px;
             padding: 10px;
             border: none;
-            background-color: teal;
             color: white;
-            font-weight: bold;
-            cursor: pointer;
             margin-top: 10px;
+            font-size: 16px;
+            box-shadow: #7451f8 30px 20px 30px -10px;
+            border-radius: 0.4rem;
+            background-color: #c9bcf7;
+            cursor: pointer;
+            align-items: center;
+            &:hover {
+              background-color: #7451f8;
+            }
           }
         }
       }

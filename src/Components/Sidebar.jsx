@@ -11,6 +11,7 @@ import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydream";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/AdminLogo.png";
 import classes from "../Styles/Sidebar.module.scss";
 
@@ -18,25 +19,33 @@ const Sidebar = () => {
   return (
     <div className={classes.sidebar}>
       <div className={classes.top}>
-        <img className={classes.logo} src={logo} alt="logo" />
-        <span className={classes.logotitle}>Admin Panel</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <img className={classes.logo} src={logo} alt="logo" />
+          <span className={classes.logotitle}>Admin Panel</span>
+        </Link>
       </div>
       <div className={classes.center}>
         <ul>
           <p className={classes.title}> MAIN </p>
-          <li>
-            <DashboardIcon className={classes.icon} />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li>
+              <DashboardIcon className={classes.icon} />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className={classes.title}> List </p>
-          <li>
-            <GroupAddIcon className={classes.icon} />
-            <span>Users</span>
-          </li>
-          <li>
-            <StorefrontIcon className={classes.icon} />
-            <span>Products</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <GroupAddIcon className={classes.icon} />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <StorefrontIcon className={classes.icon} />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className={classes.icon} />
             <span>Orders</span>

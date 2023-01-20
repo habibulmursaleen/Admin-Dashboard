@@ -4,6 +4,7 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../../Styles/Widgets.module.scss";
 
 const Widgets = ({ props }) => {
@@ -96,7 +97,9 @@ const Widgets = ({ props }) => {
         <span className={classes.counter}>
           {data.isMoney && "$"} {amount}
         </span>
-        <span className={classes.link}>{data.link}</span>
+        <Link to="/users" style={{ textDecoration: "none" }}>
+          <span className={classes.link}>{data.link}</span>
+        </Link>
       </div>
       <div className={classes.right}>
         <div className={`${classes.percentage} ${classes.positive}`}>

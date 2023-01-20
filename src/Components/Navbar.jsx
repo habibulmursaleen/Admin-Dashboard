@@ -6,6 +6,7 @@ import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../Styles/Navbar.module.scss";
 
 const Navbar = () => {
@@ -38,12 +39,13 @@ const Navbar = () => {
           <div className={classes.item}>
             <ListOutlinedIcon />
           </div>
-
-          <img
-            src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt="avater"
-            className={classes.avatar}
-          />
+          <Link to="/users/view" style={{ textDecoration: "none" }}>
+            <img
+              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="avater"
+              className={classes.avatar}
+            />
+          </Link>
         </div>
       </div>
     </div>

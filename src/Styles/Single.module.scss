@@ -1,6 +1,6 @@
 .single {
   display: flex;
-  width: 100%;
+  //width: 100%;
   .singleContainer {
     flex: 6;
 
@@ -12,60 +12,78 @@
         flex: 2;
         -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-        padding: 100px;
+        padding: 10px;
         position: relative;
         border-radius: 0.7rem;
         &:hover {
           box-shadow: #c9bcf7 10px 10px 40px -10px;
         }
 
+        .itemImg {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 5px solid #7d5bf9;
+          margin-right: 10px;
+          object-fit: cover;
+          &:hover {
+            width: 110px;
+            height: 110px;
+          }
+        }
+
         .editButton {
-          position: absolute;
-          top: 0;
-          right: 0;
-          font-size: 12px;
-          background-color: #7451f8;
-          color: #fff;
-          border-radius: 0.4rem;
-          padding: 0.3rem;
+          font-size: 16px;
+          color: lightgray;
+          margin-bottom: 20px;
           box-shadow: #7451f8 30px 20px 30px -10px;
           cursor: pointer;
+          align-items: center;
+          &:hover {
+            background-color: #7451f8;
+            border-radius: 0.4rem;
+            padding: 0.5rem;
+          }
+        }
+
+        .itemTitle {
+          align-items: center;
+          margin: 30px;
+          color: #555;
+          &:hover {
+            color: #7451f8;
+          }
         }
 
         .item {
-          display: flex;
-          gap: 20px;
-
-          .itemImg {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid #7d5bf9;
-            margin-right: 10px;
-            object-fit: cover;
-          }
+          // display: flex;
+          gap: 5px;
 
           .details {
-            .itemTitle {
-              margin-bottom: 10px;
-              color: #555;
-              &:hover {
-                color: #7451f8;
-              }
-            }
-
+            padding: 2.4rem;
+            /* align-items: center; */
+            display: inline-flex;
+            flex-wrap: wrap-reverse;
+            /* justify-content: space-between; */
+            gap: 10px;
             .detailItem {
               margin-bottom: 10px;
               font-size: 14px;
 
               .itemKey {
-                font-weight: bold;
-                color: gray;
+                display: inline;
+                color: #ffffff;
                 margin-right: 5px;
+                background-color: #7451f8;
+                border-radius: 0.4rem;
+                padding: 0.3rem;
               }
 
               .itemValue {
                 font-weight: 300;
+                box-shadow: #bfaefc 10px 10px 40px -10px;
+                border-radius: 0.4rem;
+                padding: 0.3rem;
               }
             }
           }

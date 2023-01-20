@@ -3,20 +3,28 @@
   padding: 20px;
 
   .datatableTitle {
-    width: 100%;
-    font-size: 24px;
-    color: gray;
+    width: 97%;
+    font-size: 18px;
+    color: #ffffff;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    border-radius: 0.7rem;
+    background-color: #7d5bf9;
+    &:hover {
+      box-shadow: #c9bcf7 10px 10px 40px -10px;
+    }
 
     .link {
       text-decoration: none;
-      color: green;
+      color: #fff;
       font-size: 16px;
       font-weight: 400;
-      border: 1px solid green;
+      border: 1px solid #fff;
       padding: 5px;
       border-radius: 5px;
       cursor: pointer;
